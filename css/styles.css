@@ -201,10 +201,33 @@ button:focus,
 /* Contact page */
 
 .contact-section {
-    max-width: 400px;
+    max-width: 300px;
     text-align: center;
     margin: 0 auto;
 }
+
+.contact-section__form {
+    margin-bottom: 15px;
+}
+
+.standard-label {
+    display: block;
+}
+
+.contact-section input,
+#message  {
+    border: 1px solid var(--light-gray);
+    width: 100%;
+}
+
+.contact-section input,
+.standard-label,
+#message {
+    border-radius: 5px;
+    padding: 4px 10px;
+    margin-bottom: 10px;
+}
+
 
 /* Work page */
 .work-section {

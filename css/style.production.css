@@ -5,6 +5,12 @@
 * Browsers: last 4 version
 */
 
+/* Variables */
+
+:root {
+    /* Colors */
+}
+
 
 /* Base CSS styles */
 * {
@@ -240,10 +246,37 @@ button:focus,
 /* Contact page */
 
 .contact-section {
-    max-width: 400px;
+    max-width: 300px;
     text-align: center;
     margin: 0 auto;
 }
+
+.contact-section__form {
+    margin-bottom: 15px;
+}
+
+.standard-label {
+    display: block;
+}
+
+.contact-section input  {
+    border: 1px solid #c2cbce;
+    width: 100%;
+}
+
+#message  {
+    border: 1px solid #c2cbce;
+    width: 100%;
+}
+
+.contact-section input,
+.standard-label,
+#message {
+    border-radius: 5px;
+    padding: 4px 10px;
+    margin-bottom: 10px;
+}
+
 
 /* Work page */
 .work-section {
