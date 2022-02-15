@@ -91,6 +91,7 @@ button:focus,
 /* Navigation */
 .navigation-list {
     list-style-type: none;
+    padding: 0;
 }
 
 .navigation-list li {
@@ -319,18 +320,55 @@ button:focus,
 /* Media queries */
 
 @media all and (max-width: 500px) {
+    /* Header */
+    .page-header {
+        flex-direction: column;
+        width: 100%;
+    }
+    .page-header__item {
+        flex-basis: 100%;
+    }
+    .logo-image {
+        width: 150px;
+    }
+    /* Navigation */
+    .navigation-list li {
+        margin: 0;
+    }
+    .navigation-list li:not(:first-child) {
+        margin-left: 15px;
+    }
+     /* Work page */
     .grid {
         grid-template-columns: 1fr;
+    }
+    /* Home page */
+    .profile {
+        width: 95%;
+        text-align: center;
+    }
+    .profile__portrait {
+        float: none;
+        width: 60%;
+        display: block;
+        margin: 0 auto;
+    }
+    /* About page */
+    .about-section {
+        width: 90%;
+        margin: 0 auto;
     }
 }
 
 @media all and (min-width: 500px) and (max-width: 750px) {
+    /* Work page */
     .grid {
         grid-template-columns: 1fr 1fr;
     }
 }
 
 @media all and (max-width: 750px) {
+    /* Work page */
     .grid {
         grid-gap: 10px;
     }
@@ -338,7 +376,11 @@ button:focus,
         grid-column: auto / auto;
         grid-row: auto / auto;
     }
+    /* General */
     h1 {
+        font-size: 26px;
+    }
+    h2 {
         font-size: 22px;
     }
 }
