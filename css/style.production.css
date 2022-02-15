@@ -162,16 +162,24 @@ button:focus,
     text-align: right;
 }
 
+
 .logo-image {
     width: 200px;
-    height: 80px;
-    -o-object-fit: cover;
-       object-fit: cover;
     -webkit-transition: 0.2s -webkit-transform;
     transition: 0.2s -webkit-transform;
     -o-transition: 0.2s transform;
     transition: 0.2s transform;
     transition: 0.2s transform, 0.2s -webkit-transform;
+}
+
+/* Object fit not supported in IE */
+@supports ((-o-object-fit: cover) or (object-fit: cover)) {
+    /* Aligns the logo verticaly with the nav */
+    .logo-image {
+        height: 80px;
+        -o-object-fit: cover;
+           object-fit: cover;
+    }
 }
 
 .logo-image:hover {
@@ -467,6 +475,7 @@ button:focus,
     /* Work page */
     .grid {
         grid-gap: 10px;
+        margin: 0 auto;
     }
     .grid__item:last-child {
         grid-column: auto / auto;
