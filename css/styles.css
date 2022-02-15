@@ -134,11 +134,19 @@ button:focus,
     text-align: right;
 }
 
+
 .logo-image {
     width: 200px;
-    height: 80px;
-    object-fit: cover;
     transition: 0.2s transform;
+}
+
+/* Object fit not supported in IE */
+@supports (object-fit: cover) {
+    /* Aligns the logo verticaly with the nav */
+    .logo-image {
+        height: 80px;
+        object-fit: cover;
+    }
 }
 
 .logo-image:hover {
@@ -371,6 +379,7 @@ button:focus,
     /* Work page */
     .grid {
         grid-gap: 10px;
+        margin: 0 auto;
     }
     .grid__item:last-child {
         grid-column: auto / auto;
