@@ -39,15 +39,15 @@
   <main class="contact-section">
     <section class="contact-section__form">
       <h1>Contact Me</h1>
-      <form action="submit" method="post" id="contact-form">
+      <form action="https://formspree.io/f/xknyrrna" method="post" id="contact-form">
         <label class="standard-label" for="email">Email:</label>
-        <input id="email" type="email" required />
+        <input id="email" type="email" name="email" required />
         <br />
         <label class="standard-label" for="phone">Phone: </label>
-        <input id="phone" type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" />
+        <input id="phone" type="tel" name="phone" pattern="\d{3}[\-]\d{3}[\-]\d{4}" />
         <br />
         <label class="standard-label" for="message">Message: </label>
-        <textarea id="message" maxlength="240" required></textarea>
+        <textarea id="message" maxlength="240" name="message" required></textarea>
         <br />
         <button>Send Message</button>
       </form>
