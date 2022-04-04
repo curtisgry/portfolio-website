@@ -286,6 +286,18 @@ button:focus,
     margin: 0 auto;
 }
 
+.work-section .grid__item a {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.tech-logo-container img {
+    padding: 5px;
+    border-radius: 4px;
+    background-color: black;
+    width: 35px;
+}
+
 /* Start grid fallback */
 .grid__item {
     display: inline-block;
