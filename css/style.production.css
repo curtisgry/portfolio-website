@@ -337,6 +337,10 @@ button:focus,
     text-decoration: none;
 }
 
+.social-links__item > img {
+    width: 30px;
+}
+
 .page-footer {
     clear: both;
     display: -webkit-box;
